@@ -52,7 +52,7 @@ under the License.
    | Default: ${user.home}/.m2/repository
   
   -->
-
+  
   <!-- interactiveMode
    | This will determine whether maven prompts you when it needs input. If set to false,
    | maven will use a sensible default value, perhaps based on some other setting, for
@@ -143,6 +143,12 @@ under the License.
       <password>cdltsk2021</password>
     </server>
 
+    <server>
+      <id>nexus-yeelink</id>
+      <username>user4maven</username>
+      <password>a5c03966</password>
+    </server>
+
   </servers>
 
   <!-- mirrors
@@ -172,16 +178,18 @@ under the License.
     <mirror>
       <id>maven-public</id>
       <mirrorOf>*</mirrorOf>
-      <name>jiahua-nexus</name>
+      <name>ltd-nexus</name>
       <url>http://10.0.0.155:31534/repository/maven-public/</url>
     </mirror>
 
+<!-- 
     <mirror>
       <id>alimaven</id>
       <name>aliyun maven</name>
       <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
       <mirrorOf>central</mirrorOf>
   </mirror>
+   -->
     
   </mirrors>
 

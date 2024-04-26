@@ -8,6 +8,6 @@ COPY ./settings.xml /root/.m2/
 # 设置环境变量
 ENV MAVEN_HOME=/usr/local/maven/apache-maven-3.9.6
 ENV MAVEN_CONFIG=/root/.m2
+ENV JAVA_HOME=/usr/lib/jvm/msopenjdk-17
 
-ENV CLASSPATH=.:$JAVA_HOME/lib/jrt-fs.jar:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
 ENV PATH=$PATH:$JAVA_HOME/bin:$MAVEN_HOME/bin
