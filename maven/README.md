@@ -28,4 +28,6 @@ EOF
 
 # 构建镜像
 # 在Dockerfile所在目录执行以下命令
-docker build --platform linux/amd64 -f ./Dockerfile -t 10.0.0.17:3060/cicd/microsoft-openjdk-maven:17-3.9.6 .
+# docker build --platform linux/amd64 -f ./Dockerfile -t 10.0.0.17:3060/cicd/microsoft-openjdk-maven:17-3.9.6 .
+
+docker build -t 10.0.0.17:3060/cicd/maven-microsoft-openjdk:latest .
